@@ -8,6 +8,7 @@
 ### 2. Install `tailwind css` in the project :
   ```bash
     npm install -D tailwindcss@3 postcss autoprefixer
+    npx tailwindcss init -p
   ```
 
 ### 3. Configure `tailwind.config.js` file
