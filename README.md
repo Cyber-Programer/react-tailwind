@@ -39,3 +39,39 @@ Make sure this file is imported in main.jsx or index.js:
   npm run dev
   npm start
 ```
+
+## Folder Structure : 
+```bash
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/            # Static assets like images, fonts
+│   ├── components/        # Reusable components (Button, Card, Navbar, etc.)
+│   ├── features/          # Feature-based folders (Auth, Dashboard, Tasks, etc.)
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   └── authSlice.js (if using Redux)
+│   │   └── tasks/
+│   │       ├── TaskList.jsx
+│   │       ├── TaskDetails.jsx
+│   │       └── taskSlice.js
+│   ├── hooks/             # Custom hooks
+│   ├── layouts/           # Layout components (DashboardLayout, AuthLayout)
+│   ├── pages/             # Route-based page components
+│   ├── routes/            # React Router setup
+│   ├── services/          # API calls (e.g., axios configs)
+│   ├── store/             # Redux store or Zustand/Context setup
+│   ├── styles/            # Tailwind config and global CSS
+│   │   └── index.css
+│   ├── utils/             # Helper functions
+│   ├── App.jsx
+│   ├── main.jsx           # Entry point (Vite) or index.js (CRA)
+│   └── tailwind.config.js
+├── .env
+├── package.json
+├── postcss.config.js
+└── tailwind.config.js
+
+```
