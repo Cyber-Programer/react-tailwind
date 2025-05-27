@@ -37,7 +37,6 @@ Make sure this file is imported in main.jsx or index.js:
 ### 5. Start Your App
 ```bash
   npm run dev
-  npm start
 ```
 
 ## Folder Structure : 
